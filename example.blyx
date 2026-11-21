@@ -1,0 +1,15 @@
+use linefit;
+
+fn main() {
+    let paper = 100.0;
+    let top = 10.0;
+    let bottom = 15.0;
+    let line = 6.0;
+    let result = linefit_capacity(paper, top, bottom, line);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
